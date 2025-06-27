@@ -31,7 +31,8 @@
 
     // Step 5: Load the PDF viewer with local PDF
     const iframe = document.getElementById('pdfViewer');
-    iframe.src = 'web/viewer.html?file=my-document.pdf';
+    const timestamp = Date.now();
+    iframe.src = `web/viewer.html?v=${timestamp}&file=my-document.pdf`;
   </script>
 </body>
 </html>
